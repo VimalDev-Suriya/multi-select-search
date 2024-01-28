@@ -1,0 +1,76 @@
+body {
+  font-family: sans-serif;
+}
+
+.input-search-container{
+  display: flex;
+  position: relative;
+}
+
+.input-search{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap:1rem;
+  border-radius: 1.5rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+.input-search input {
+  border: none;
+  /* width: 100%; */
+}
+
+.input-search input:focus {
+  outline: none;
+}
+
+.suggestions-list{
+  max-height: 200px;
+  overflow-y: scroll;
+  list-style: none;
+  position: absolute;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.suggestions-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.suggestions-list li:hover{
+  background-color: lightgrey;
+}
+
+.suggestions-list li img {
+  height: 30px;
+}
+
+.user-pill{
+  height: 20px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border-radius: 16px;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.user-pill img {
+  height: 100%;
+}
